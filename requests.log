@@ -1,0 +1,2 @@
+101.99.20.250 - - [04/Nov/2016:05:17:17 +0000] "GET / HTTP/1.1" 200 2321 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.87 Safari/537.36"
+101.99.20.250 - - [04/Nov/2016:05:17:18 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://128.199.181.99:1710/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.87 Safari/537.36"
