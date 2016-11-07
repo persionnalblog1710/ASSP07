@@ -3,7 +3,7 @@
     <div class="top-header navbar navbar-default"><!--header-one-->
         <div class="container">
             <div class="nav navbar-nav wow fadeInLeft animated" data-wow-delay=".5s">
-                <p>Welcome to Modern Shoppe <a href="register.html">Register </a> Or <a href="signin.html">Sign In </a></p>
+                <p>Welcome to Modern Shoppe <a href="#" data-toggle="modal" data-target="#register-modal">Register </a> Or <a href="#" data-toggle="modal" data-target="#login-modal">Sign In </a></p>
             </div>
             <div class="nav navbar-nav navbar-right social-icons wow fadeInRight animated" data-wow-delay=".5s">
                 <ul>
@@ -27,7 +27,7 @@
                 </ul>
             </div>
             <div class="nav navbar-nav logo wow zoomIn animated" data-wow-delay=".7s">
-                <h1><a href="index.html">Modern <b>Shoppe</b><span class="tag">Everything for Kids world </span> </a></h1>
+                <h1><a href="{{route('home')}}">Modern <b>Shoppe</b><span class="tag">Everything for Kids world </span> </a></h1>
             </div>
             <div class="nav navbar-nav navbar-right header-two-right">
                 <div class="header-right my-account">
@@ -62,7 +62,7 @@
                 <!--navbar-header-->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav top-nav-info">
-                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="{{route('home')}}" class="active">Home</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Baby<b class="caret"></b></a>
                             <ul class="dropdown-menu multi-column multi-column1">
