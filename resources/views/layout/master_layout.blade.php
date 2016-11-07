@@ -22,6 +22,7 @@
     <!--web-fonts-->
     <!--animation-effect-->
     <link href="{{asset('css/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/register.css')}}" rel="stylesheet">
     @show
     @yield('head')
 </head>
@@ -31,6 +32,8 @@
     @yield('content')
 
     
+    @include('elements.modal_signin')
+    @include('elements.modal_signup')
     @include('layout.partials.footer')
     <script src="{{asset('js/jquery-1.11.1.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.js')}}"></script>
