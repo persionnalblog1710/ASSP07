@@ -3,7 +3,18 @@
     <div class="top-header navbar navbar-default"><!--header-one-->
         <div class="container">
             <div class="nav navbar-nav wow fadeInLeft animated" data-wow-delay=".5s">
-                <p>Welcome to Modern Shoppe <a href="#" data-toggle="modal" data-target="#register-modal">Register </a> Or <a href="#" data-toggle="modal" data-target="#login-modal">Sign In </a></p>
+                @if (Auth::guest())
+                    <p>Welcome to Modern Shoppe 
+                    <a href="#" data-toggle="modal" data-target="#register-modal">Register </a> Or <a href="#" data-toggle="modal" data-target="#login-modal">Sign In </a>
+                @else
+                    <p>Hello
+                    <a href="#">{{ Auth::user()->name }} <span class="caret"></span></a> : 
+                    <a href="{{ url('/logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> Logout </a>
+                    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
+                @endif
+                </p>
             </div>
             <div class="nav navbar-nav navbar-right social-icons wow fadeInRight animated" data-wow-delay=".5s">
                 <ul>
@@ -27,7 +38,7 @@
                 </ul>
             </div>
             <div class="nav navbar-nav logo wow zoomIn animated" data-wow-delay=".7s">
-                <h1><a href="{{route('home')}}">Modern <b>Shoppe</b><span class="tag">Everything for Kids world </span> </a></h1>
+                <h1><a href="{{route('home')}}">Modern <b>Shoppe</b><span class="tag">Everything for world </span> </a></h1>
             </div>
             <div class="nav navbar-nav navbar-right header-two-right">
                 <div class="header-right my-account">
