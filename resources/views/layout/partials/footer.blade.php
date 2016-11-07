@@ -4,7 +4,7 @@
         <div class="footer-info">
             <div class="col-md-4 footer-grids wow fadeInUp animated" data-wow-delay=".5s">
                 <h4 class="footer-logo"><a href="index.html">Modern <b>Shoppe</b> <span class="tag">Everything for Kids world </span> </a></h4>
-                <p>© 2016 Modern Shoppe . All rights reserved | Design by <a href="http://w3layouts.com" target="_blank">W3layouts</a></p>
+                <p>© 2016 Modern Shoppe . All rights reserved | Design by <a href="#" target="_blank">ASS07</a></p>
             </div>
             <div class="col-md-4 footer-grids wow fadeInUp animated" data-wow-delay=".7s">
                 <h3>Popular</h3>
