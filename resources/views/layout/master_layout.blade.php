@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="keywords" content="Modern Shop create by ASS7" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Modern Shoppe</title>
@@ -90,6 +91,9 @@
             alert('Done!');
         });
     </script>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--//for-mobile-apps -->
     @yield('script')
 </body>
 </html>
