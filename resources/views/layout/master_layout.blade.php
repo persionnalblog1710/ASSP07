@@ -28,7 +28,6 @@
 </head>
 <body>
     @include('layout.partials.header')
-    @include('layout.partials.banner')
     @yield('content')
 
     

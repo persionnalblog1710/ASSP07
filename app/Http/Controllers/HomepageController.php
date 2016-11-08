@@ -16,6 +16,10 @@ class HomepageController extends Controller
         return view('homepage.index');
     }
 
+    public function getContact()
+    {
+        return view('contact.index');
+    }
     /**
      * Show the form for creating a new resource.
      *
