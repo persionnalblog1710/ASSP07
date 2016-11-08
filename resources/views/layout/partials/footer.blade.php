@@ -9,7 +9,7 @@
             <div class="col-md-4 footer-grids wow fadeInUp animated" data-wow-delay=".7s">
                 <h3>Popular</h3>
                 <ul>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="{{route('about')}}">About Us</a></li>
                     <li><a href="products.html">new</a></li>
                     <li><a href="{{route('contact')}}">Contact Us</a></li>
                     <li><a href="faq.html">FAQ</a></li>
