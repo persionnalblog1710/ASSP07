@@ -3,6 +3,7 @@
 @parent
 @endsection
 @section('content')
+@include('layout.partials.banner')
 <!--new-->
 <div class="new">
     <div class="container">
