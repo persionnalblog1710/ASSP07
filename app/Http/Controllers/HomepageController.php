@@ -20,6 +20,11 @@ class HomepageController extends Controller
     {
         return view('contact.index');
     }
+
+    public function getAbout()
+    {
+        return view('about.index');
+    }
     /**
      * Show the form for creating a new resource.
      *

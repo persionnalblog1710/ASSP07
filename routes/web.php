@@ -13,6 +13,7 @@
 
 Route::get('/', ['as' => 'home', 'uses' => 'HomepageController@index' ]);
 Route::get('/contact', ['as' => 'contact', 'uses' => 'HomepageController@getContact' ]);
+Route::get('about', ['as' => 'about', 'uses' => 'HomepageController@getAbout' ]);
 
 Auth::routes();
 
