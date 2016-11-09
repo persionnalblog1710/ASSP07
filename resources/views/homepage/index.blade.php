@@ -14,17 +14,17 @@
         <div class="new-info">
             <div class="col-md-3 new-grid simpleCart_shelfItem wow flipInY animated" data-wow-delay=".5s">
                 <div class="new-top">
-                    <a href="single.html"><img src="{{asset('images/g9.jpg')}}" class="img-responsive" alt=""/></a>
+                    <a href="#"><img src="{{asset('images/g9.jpg')}}" class="img-responsive" alt=""/></a>
                     <div class="new-text">
                         <ul>
                             <li><a class="item_add" href=""> Add to cart</a></li>
-                            <li><a href="single.html">Quick View </a></li>
-                            <li><a href="products.html">Show Details </a></li>
+                            <li><a href="#">Quick View </a></li>
+                            <li><a href="#">Show Details </a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="new-bottom">
-                    <h5><a class="name" href="single.html">Baby Red Dress </a></h5>
+                    <h5><a class="name" href="#">Baby Red Dress </a></h5>
                     <div class="rating">
                         <span class="on">☆</span>
                         <span class="on">☆</span>
@@ -40,17 +40,17 @@
             </div>
             <div class="col-md-3 new-grid new-mdl simpleCart_shelfItem wow flipInY animated" data-wow-delay=".7s">
                 <div class="new-top">
-                    <a href="single.html"><img src="{{asset('images/g10.jpg')}}" class="img-responsive" alt=""/></a>
+                    <a href="#"><img src="{{asset('images/g10.jpg')}}" class="img-responsive" alt=""/></a>
                     <div class="new-text">
                         <ul>
                             <li><a class="item_add" href=""> Add to cart</a></li>
-                            <li><a href="single.html">Quick View </a></li>
-                            <li><a href="products.html">Show Details </a></li>
+                            <li><a href="#">Quick View </a></li>
+                            <li><a href="#">Show Details </a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="new-bottom">
-                    <h5><a class="name" href="single.html">Crocs Sandals </a></h5>
+                    <h5><a class="name" href="#">Crocs Sandals </a></h5>
                     <div class="rating">
                         <span class="on">☆</span>
                         <span class="on">☆</span>
@@ -65,17 +65,17 @@
             </div>
             <div class="col-md-3 new-grid new-mdl1 simpleCart_shelfItem wow flipInY animated" data-wow-delay=".9s">
                 <div class="new-top">
-                    <a href="single.html"><img src="{{asset('images/g11.jpg')}}" class="img-responsive" alt=""/></a>
+                    <a href="#"><img src="{{asset('images/g11.jpg')}}" class="img-responsive" alt=""/></a>
                     <div class="new-text">
                         <ul>
                             <li><a class="item_add" href=""> Add to cart</a></li>
-                            <li><a href="single.html">Quick View </a></li>
-                            <li><a href="products.html">Show Details </a></li>
+                            <li><a href="#">Quick View </a></li>
+                            <li><a href="#">Show Details </a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="new-bottom">
-                    <h5><a class="name" href="single.html">Pink Sip Cup </a></h5>
+                    <h5><a class="name" href="#">Pink Sip Cup </a></h5>
                     <div class="rating">
                         <span class="on">☆</span>
                         <span class="on">☆</span>
@@ -90,17 +90,17 @@
             </div>
             <div class="col-md-3 new-grid simpleCart_shelfItem wow flipInY animated" data-wow-delay="1.1s">
                 <div class="new-top">
-                    <a href="single.html"><img src="{{asset('images/g12.jpg')}}" class="img-responsive" alt=""/></a>
+                    <a href="#"><img src="{{asset('images/g12.jpg')}}" class="img-responsive" alt=""/></a>
                     <div class="new-text">
                         <ul>
                             <li><a class="item_add" href=""> Add to cart</a></li>
-                            <li><a href="single.html">Quick View </a></li>
-                            <li><a href="products.html">Show Details </a></li>
+                            <li><a href="#">Quick View </a></li>
+                            <li><a href="#">Show Details </a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="new-bottom">
-                    <h5><a class="name" href="single.html">Child Print Bike </a></h5>
+                    <h5><a class="name" href="#">Child Print Bike </a></h5>
                     <div class="rating">
                         <span class="on">☆</span>
                         <span class="on">☆</span>
@@ -127,9 +127,9 @@
         </div>
         <div class="gallery-info">
             <div class="col-md-3 gallery-grid wow flipInY animated" data-wow-delay=".5s">
-                <a href="products.html"><img src="{{asset('images/g1.jpg')}}" class="img-responsive" alt=""/></a>
+                <a href="#"><img src="{{asset('images/g1.jpg')}}" class="img-responsive" alt=""/></a>
                 <div class="gallery-text simpleCart_shelfItem">
-                    <h5><a class="name" href="single.html">Baby Girls' Dress </a></h5>
+                    <h5><a class="name" href="#">Baby Girls' Dress </a></h5>
                     <p><span class="item_price">100$</span></p>
                     <h4 class="sizes">Sizes: <a href="#"> s</a> - <a href="#">m</a> - <a href="#">l</a> - <a href="#">xl</a> </h4>
                     <ul>
@@ -140,9 +140,9 @@
                 </div>
             </div>
             <div class="col-md-3 gallery-grid gallery-grid1 wow flipInY animated" data-wow-delay=".7s">
-                <a href="products.html"><img src="{{asset('images/g2.jpg')}}" class="img-responsive" alt=""/></a>
+                <a href="#"><img src="{{asset('images/g2.jpg')}}" class="img-responsive" alt=""/></a>
                 <div class="gallery-text simpleCart_shelfItem">
-                    <h5><a class="name" href="single.html">Pokemon Onesies</a></h5>
+                    <h5><a class="name" href="#">Pokemon Onesies</a></h5>
                     <p><span class="item_price">79$</span></p>
                     <h4 class="sizes">Sizes: <a href="#"> s</a> - <a href="#">m</a> - <a href="#">l</a> - <a href="#">xl</a> </h4>
                     <ul>
@@ -153,9 +153,9 @@
                 </div>
             </div>
             <div class="col-md-3 gallery-grid gallery-grid2 wow flipInY animated" data-wow-delay=".9s">
-                <a href="products.html"><img src="{{asset('images/g3.jpg')}}" class="img-responsive" alt=""/></a>
+                <a href="#"><img src="{{asset('images/g3.jpg')}}" class="img-responsive" alt=""/></a>
                 <div class="gallery-text simpleCart_shelfItem">
-                    <h5><a class="name" href="single.html">Doctor Play Set</a></h5>
+                    <h5><a class="name" href="#">Doctor Play Set</a></h5>
                     <p><span class="item_price">30$</span></p>
                     <h4 class="sizes">Sizes: <a href="#"> s</a> - <a href="#">m</a> - <a href="#">l</a> - <a href="#">xl</a> </h4>
                     <ul>
@@ -166,9 +166,9 @@
                 </div>
             </div>
             <div class="col-md-3 gallery-grid wow flipInY animated" data-wow-delay="1.1s">
-                <a href="products.html"><img src="{{asset('images/g4.jpg')}}" class="img-responsive" alt=""/></a>
+                <a href="#"><img src="{{asset('images/g4.jpg')}}" class="img-responsive" alt=""/></a>
                 <div class="gallery-text simpleCart_shelfItem">
-                    <h5><a class="name" href="single.html">Cap & Gloves Set</a></h5>
+                    <h5><a class="name" href="#">Cap & Gloves Set</a></h5>
                     <p><span class="item_price">15$</span></p>
                     <h4 class="sizes">Sizes: <a href="#"> s</a> - <a href="#">m</a> - <a href="#">l</a> - <a href="#">xl</a> </h4>
                     <ul>
@@ -179,9 +179,9 @@
                 </div>
             </div>
             <div class="col-md-3 gallery-grid wow flipInY animated" data-wow-delay=".5s">
-                <a href="products.html"><img src="{{asset('images/g5.jpg')}}" class="img-responsive" alt=""/></a>
+                <a href="#"><img src="{{asset('images/g5.jpg')}}" class="img-responsive" alt=""/></a>
                 <div class="gallery-text simpleCart_shelfItem">
-                    <h5><a class="name" href="single.html">Full Sleeves Romper</a></h5>
+                    <h5><a class="name" href="#">Full Sleeves Romper</a></h5>
                     <p><span class="item_price">60$</span></p>
                     <h4 class="sizes">Sizes: <a href="#"> s</a> - <a href="#">m</a> - <a href="#">l</a> - <a href="#">xl</a> </h4>
                     <ul>
@@ -192,9 +192,9 @@
                 </div>
             </div>
             <div class="col-md-3 gallery-grid gallery-grid1 wow flipInY animated" data-wow-delay=".7s">
-                <a href="products.html"><img src="{{asset('images/g6.jpg')}}" class="img-responsive" alt=""/></a>
+                <a href="#"><img src="{{asset('images/g6.jpg')}}" class="img-responsive" alt=""/></a>
                 <div class="gallery-text simpleCart_shelfItem">
-                    <h5><a class="name" href="single.html">Party Wear Frock</a></h5>
+                    <h5><a class="name" href="#">Party Wear Frock</a></h5>
                     <p><span class="item_price">80$</span></p>
                     <h4 class="sizes">Sizes: <a href="#"> s</a> - <a href="#">m</a> - <a href="#">l</a> - <a href="#">xl</a> </h4>
                     <ul>
@@ -205,9 +205,9 @@
                 </div>
             </div>
             <div class="col-md-3 gallery-grid gallery-grid2 wow flipInY animated" data-wow-delay=".9s">
-                <a href="products.html"><img src="{{asset('images/g7.jpg')}}" class="img-responsive" alt=""/></a>
+                <a href="#"><img src="{{asset('images/g7.jpg')}}" class="img-responsive" alt=""/></a>
                 <div class="gallery-text simpleCart_shelfItem">
-                    <h5><a class="name" href="single.html">Bear Diaper Bag</a></h5>
+                    <h5><a class="name" href="#">Bear Diaper Bag</a></h5>
                     <p><span class="item_price">110$</span></p>
                     <h4 class="sizes">Sizes: <a href="#"> s</a> - <a href="#">m</a> - <a href="#">l</a> - <a href="#">xl</a> </h4>
                     <ul>
@@ -218,9 +218,9 @@
                 </div>
             </div>
             <div class="col-md-3 gallery-grid wow flipInY animated" data-wow-delay="1.1s">
-                <a href="products.html"><img src="{{asset('images/g8.jpg')}}" class="img-responsive" alt=""/></a>
+                <a href="#"><img src="{{asset('images/g8.jpg')}}" class="img-responsive" alt=""/></a>
                 <div class="gallery-text simpleCart_shelfItem">
-                    <h5><a class="name" href="single.html">Battery Police Bike</a></h5>
+                    <h5><a class="name" href="#">Battery Police Bike</a></h5>
                     <p><span class="item_price">300$</span></p>
                     <h4 class="sizes">Sizes: <a href="#"> s</a> - <a href="#">m</a> - <a href="#">l</a> - <a href="#">xl</a> </h4>
                     <ul>
