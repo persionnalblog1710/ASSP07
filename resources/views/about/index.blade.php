@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-md-3 new-grid new-mdl simpleCart_shelfItem wow flipInY animated" data-wow-delay=".7s">
                         <div class="new-top">
-                            <a href="single.html"><img src="{{asset('images/author/duytuan.jpg')}}" class="img-responsive" alt=""/></a>
+                            <a href="#"><img src="{{asset('images/author/duytuan.jpg')}}" class="img-responsive" alt=""/></a>
                         </div>
                         <div class="new-bottom">
                             <h5><a class="name" href="#">Nguyen Duy Tuan</a></h5>
