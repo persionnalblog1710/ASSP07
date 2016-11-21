@@ -4,10 +4,12 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Codesleeve\Stapler\ORM\StaplerableInterface;
+use Codesleeve\Stapler\ORM\EloquentTrait;
 
-class User extends Authenticatable
+class User extends Authenticatable implements StaplerableInterface
 {
-    use Notifiable;
+    use Notifiable, EloquentTrait;
 
     /**
      * The attributes that are mass assignable.
@@ -15,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'avatar', 'first_name', 'last_name'
     ];
 
     /**
@@ -26,4 +28,10 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function __construct(array $attributes = array()) {
+        $this->hasAttachedFile('avatar', config('customize-image.profile-avatar'));
+
+        parent::__construct($attributes);
+    }
 }
