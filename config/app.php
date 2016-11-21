@@ -178,6 +178,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         *plugin 
+         */
+        Codesleeve\LaravelStapler\Providers\L5ServiceProvider::class,
+
     ],
 
     /*

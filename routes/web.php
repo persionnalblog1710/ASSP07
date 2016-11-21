@@ -15,5 +15,8 @@ Route::get('/', ['as' => 'home', 'uses' => 'HomepageController@index' ]);
 Route::get('/contact', ['as' => 'contact', 'uses' => 'HomepageController@getContact' ]);
 Route::get('about', ['as' => 'about', 'uses' => 'HomepageController@getAbout' ]);
 
+Route::get('profile', ['middleware' => 'auth' ,'as' => 'profile', 'uses' => 'UserController@index']);
+Route::post('profile/update/{user_id}', ['middleware' => 'auth' ,'as' => 'update_profile', 'uses' => 'UserController@update']);
+
 Auth::routes();
 
