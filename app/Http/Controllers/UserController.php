@@ -22,6 +22,6 @@ class UserController extends Controller
         $user->phone = $request->phone;
         $user->save();
 
-        return view('profile.index',['user' => $user]);
+        return redirect()->back()->with(['status' => 'Update profile successfully!']);
     }
 }
