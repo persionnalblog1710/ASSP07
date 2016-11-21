@@ -295,6 +295,7 @@ class ComposerStaticInit68dd95145e07462ad3ac6052f50f3ec0
     );
 
     public static $classMap = array (
+        'AddAvatarFieldsToUsersTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_21_105845_add_avatar_fields_to_users_table.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -304,6 +305,7 @@ class ComposerStaticInit68dd95145e07462ad3ac6052f50f3ec0
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\HomepageController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomepageController.php',
+        'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
@@ -371,6 +373,7 @@ class ComposerStaticInit68dd95145e07462ad3ac6052f50f3ec0
         'Codesleeve\\Stapler\\Style' => __DIR__ . '/..' . '/codesleeve/stapler/src/Style.php',
         'Codesleeve\\Stapler\\Validator' => __DIR__ . '/..' . '/codesleeve/stapler/src/Validator.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+        'CreateSessionsTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_21_134421_create_sessions_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/CronExpression.php',
@@ -1411,6 +1414,7 @@ class ComposerStaticInit68dd95145e07462ad3ac6052f50f3ec0
         'Illuminate\\Session\\EncryptedStore' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Session/EncryptedStore.php',
         'Illuminate\\Session\\ExistenceAwareInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Session/ExistenceAwareInterface.php',
         'Illuminate\\Session\\FileSessionHandler' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Session/FileSessionHandler.php',
+        'Illuminate\\Session\\Middleware\\AuthenticateSession' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Session/Middleware/AuthenticateSession.php',
         'Illuminate\\Session\\Middleware\\StartSession' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php',
         'Illuminate\\Session\\SessionInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Session/SessionInterface.php',
         'Illuminate\\Session\\SessionManager' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Session/SessionManager.php',
