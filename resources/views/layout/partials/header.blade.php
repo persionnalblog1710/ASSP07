@@ -8,7 +8,7 @@
                     <a href="#" data-toggle="modal" data-target="#register-modal">Register </a> Or <a href="#" data-toggle="modal" data-target="#login-modal">Sign In </a>
                 @else
                     <p>Hello
-                    <a href="#">{{ Auth::user()->name }} <span class="caret"></span></a> : 
+                    <a href="{{route('profile')}}">{{ Auth::user()->name }} <span class="caret"></span></a> : 
                     <a href="{{ url('/logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> Logout </a>
                     <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
                         {{ csrf_field() }}
