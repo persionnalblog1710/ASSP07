@@ -17,6 +17,7 @@ Route::get('about', ['as' => 'about', 'uses' => 'HomepageController@getAbout' ])
 
 Route::get('profile', ['middleware' => 'auth' ,'as' => 'profile', 'uses' => 'UserController@index']);
 Route::post('profile/update/{user_id}', ['middleware' => 'auth' ,'as' => 'update_profile', 'uses' => 'UserController@update']);
+Route::post('profile/change_password', ['middleware' => 'auth' ,'as' => 'change_password', 'uses' => 'UserController@changePassword']);
 
 Auth::routes();
 

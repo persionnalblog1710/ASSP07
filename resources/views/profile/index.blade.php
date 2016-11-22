@@ -25,24 +25,24 @@
                 <!-- END SIDEBAR USER TITLE -->
                 <!-- SIDEBAR MENU -->
                 <div class="profile-usermenu">
-                    <ul class="nav">
-                        <li class="active">
-                            <a href="#">
+                    <ul class="nav nav-profile">
+                        <li class="active" id="overview">
+                            <a>
                             <i class="glyphicon glyphicon-home"></i>
                             Overview </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li id="account-setting">
+                            <a>
                             <i class="glyphicon glyphicon-user"></i>
-                            Account Settings </a>
+                            Change password </a>
                         </li>
-                        <li>
-                            <a href="#" target="_blank">
+                        <li id="task">
+                            <a>
                             <i class="glyphicon glyphicon-ok"></i>
-                            Tasks </a>
+                            History </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li id="help">
+                            <a>
                             <i class="glyphicon glyphicon-flag"></i>
                             Help </a>
                         </li>
@@ -51,7 +51,7 @@
                 <!-- END MENU -->
             </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 profile-overview">
             <div class="profile-content">
                 <h2 class="text-center">Personal info</h2>
                 <br>
@@ -100,6 +100,55 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-9 profile-account-setting hidden">
+            <div class="profile-content">
+                <h2 class="text-center">Change password</h2>
+                <br>
+                <form role="form" method="POST" action="{{ route('change_password', ['user_id' => $user->id]) }}">
+                {{ csrf_field() }}
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Current password:</label>
+                    <div class="col-lg-8">
+                        <input name="current_password" class="form-control" type="password">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">New password:</label>
+                    <div class="col-lg-8">
+                        <input name="new_password" class="form-control" type="password">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Confirm password:</label>
+                    <div class="col-lg-8">
+                        <input name="confirm_password" class="form-control" type="password">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary" id="save-change-password"><i class="glyphicon glyphicon-floppy-saved"></i> Save</button>
+                    <button type="button" class="btn btn-danger" id="reload-change-password"><i class="glyphicon glyphicon-refresh"></i>  Cancel</button>
+                </div>
+            </form>
+            </div>
+        </div>
+        <div class="col-md-9 profile-task hidden">
+            <div class="profile-content">
+                Task
+            </div>
+        </div>
+        <div class="col-md-9 profile-help hidden">
+            <div class="profile-content">
+                Help
+            </div>
+        </div>
     </div>
 </div>
 <br>
@@ -125,6 +174,23 @@
                 $("#save-cancel-profile").addClass('hidden');
                 $(".edit-profile").removeClass('hidden');
             })
+            $(".nav-profile li").click(function(){
+                //$(".nav-profile li").removeClass('active');
+                
+                $(".nav-profile li").each(function(){
+                    selector = $(this).hasClass('active');
+                    if(selector)
+                    {
+                        element = $(this).attr('id');
+                        $(this).removeClass('active');
+                        $(".profile-" + element).addClass('hidden');
+                    }
+                });
+                element = $(this).attr('id');
+                $(this).addClass('active');
+                $(".profile-" + element).removeClass('hidden');
+            });
+
         });
     </script>
 @endsection

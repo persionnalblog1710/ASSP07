@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Auth;
+use Hash;
 
 class UserController extends Controller
 {
@@ -23,5 +24,18 @@ class UserController extends Controller
         $user->save();
 
         return redirect()->back()->with(['status' => 'Update profile successfully!']);
+    }
+
+    public function changePassword(Request $request)
+    {
+        $user = User::find(Auth::user()->id);
+        if (Hash::check($request->current_password, $user->password))
+        {
+            $user->password = bcrypt($request->new_password);
+            $user->save();
+            return redirect()->back();
+        }
+
+        return redirect()->back();
     }
 }
