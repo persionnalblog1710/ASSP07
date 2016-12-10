@@ -12,7 +12,11 @@ class UserController extends Controller
     public function index()
     {
         $user = User::find(Auth::user()->id);
-        return view('profile.index',['user' => $user]);
+        $categories = Category::getCategories();
+        return view('profile.index',[
+            'user' => $user,
+            'categories' => $categories
+        ]);
     }
 
     public function update(Request $request, $userID)

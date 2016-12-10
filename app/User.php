@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Codesleeve\Stapler\ORM\StaplerableInterface;
-use Codesleeve\Stapler\ORM\EloquentTrait;
+// use Codesleeve\Stapler\ORM\StaplerableInterface;
+// use Codesleeve\Stapler\ORM\EloquentTrait;
 
-class User extends Authenticatable implements StaplerableInterface
+class User extends Authenticatable 
 {
-    use Notifiable, EloquentTrait;
+    use Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -29,9 +29,9 @@ class User extends Authenticatable implements StaplerableInterface
         'password', 'remember_token',
     ];
 
-    public function __construct(array $attributes = array()) {
-        $this->hasAttachedFile('avatar', config('customize-image.profile-avatar'));
+    // public function __construct(array $attributes = array()) {
+    //     $this->hasAttachedFile('avatar', config('customize-image.profile-avatar'));
 
-        parent::__construct($attributes);
-    }
+    //     parent::__construct($attributes);
+    // }
 }

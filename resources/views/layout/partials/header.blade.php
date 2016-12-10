@@ -74,7 +74,20 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav top-nav-info">
                         <li><a href="{{route('home')}}" class="active">Home</a></li>
-                        <li class="dropdown">
+                        @foreach($categories as $category)
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{$category->name}}<b class="caret"></b></a>
+                                @if($category->sub_categories)
+                                <ul class="dropdown-menu">
+                                    @foreach($category->sub_categories as $sub)
+                                        <li><a href="/category/{{$category->slug}}/{{$sub->slug}}">{{$sub->name}}</a></li>
+                                    @endforeach
+                                </ul>
+                                @endif
+                            </li>
+    
+                        @endforeach
+<!--                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Baby<b class="caret"></b></a>
                             <ul class="dropdown-menu multi-column multi-column1">
                                 <div class="row">
@@ -261,8 +274,8 @@
                                     <div class="clearfix"> </div>
                                 </div>
                             </ul>
-                        </li>
-                        <li><a href="codes.html">Special Offers</a></li>
+                        </li> -->
+                        <li><a href="#">Special Offers</a></li>
                     </ul> 
                     <div class="clearfix"> </div>
                     <!--//navbar-collapse-->

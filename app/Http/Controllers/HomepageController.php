@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Category;
+use App\Models\Product;
 
 class HomepageController extends Controller
 {
@@ -13,17 +15,28 @@ class HomepageController extends Controller
      */
     public function index()
     {
-        return view('homepage.index');
+        $categories = Category::getCategories();
+        $arrivalProduct = Product::getArrivalProducts();
+        return view('homepage.index', [
+            'categories' => $categories,
+            'arrivalProduct' => $arrivalProduct,
+        ]);
     }
 
     public function getContact()
     {
-        return view('contact.index');
+        $categories = Category::getCategories();
+        return view('contact.index', [
+            'categories' => $categories,
+        ]);
     }
 
     public function getAbout()
     {
-        return view('about.index');
+        $categories = Category::getCategories();
+        return view('about.index', [
+            'categories' => $categories,
+        ]);
     }
     /**
      * Show the form for creating a new resource.
