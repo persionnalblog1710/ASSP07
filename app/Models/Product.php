@@ -30,7 +30,7 @@ class Product extends Model
 
     public static function getArrivalProducts()
     {
-        $products = Product::orderBy('created_at', 'DESC')->take(3)->get();
+        $products = Product::orderBy('created_at', 'DESC')->take(4)->get();
         return $products;
     }
 

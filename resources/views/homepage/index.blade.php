@@ -12,108 +12,36 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur </p>
         </div>
         <div class="new-info">
-            <div class="col-md-3 new-grid simpleCart_shelfItem wow flipInY animated" data-wow-delay=".5s">
-                <div class="new-top">
-                    <a href="#"><img src="{{asset('images/g9.jpg')}}" class="img-responsive" alt=""/></a>
-                    <div class="new-text">
-                        <ul>
-                            <li><a class="item_add" href=""> Add to cart</a></li>
-                            <li><a href="#">Quick View </a></li>
-                            <li><a href="#">Show Details </a></li>
-                        </ul>
+            @foreach($arrivalProduct as $product)
+                <div class="col-md-3 new-grid simpleCart_shelfItem wow flipInY animated" data-wow-delay=".5s">
+                    <div class="new-top">
+                        <a href="#">
+                            <img src="@if( strpos($product->image, 'http://') === false && strpos($product->image, 'https://') === false){{ Voyager::image( $product->image ) }}@else{{ $product->image }}@endif">
+                        </a>
+                        <div class="new-text">
+                            <ul>
+                                <li><a class="item_add" href=""> Add to cart</a></li>
+                                <li><a href="#">Quick View </a></li>
+                                <li><a href="/product/{{$product->id}}">Show Details </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="new-bottom">
+                        <h5><a class="name" href="#">{{$product->name}}</a></h5>
+                        <div class="rating">
+                            <span class="on">☆</span>
+                            <span class="on">☆</span>
+                            <span class="on">☆</span>
+                            <span class="on">☆</span>
+                            <span>☆</span>
+                        </div>  
+                        <div class="ofr">
+                            <p class="pric1"><del>${{$product->price}}</del></p>
+                            <p><span class="item_price">${{$product->price}}</span></p>
+                        </div>
                     </div>
                 </div>
-                <div class="new-bottom">
-                    <h5><a class="name" href="#">Baby Red Dress </a></h5>
-                    <div class="rating">
-                        <span class="on">☆</span>
-                        <span class="on">☆</span>
-                        <span class="on">☆</span>
-                        <span class="on">☆</span>
-                        <span>☆</span>
-                    </div>  
-                    <div class="ofr">
-                        <p class="pric1"><del>$2000.00</del></p>
-                        <p><span class="item_price">$500.00</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 new-grid new-mdl simpleCart_shelfItem wow flipInY animated" data-wow-delay=".7s">
-                <div class="new-top">
-                    <a href="#"><img src="{{asset('images/g10.jpg')}}" class="img-responsive" alt=""/></a>
-                    <div class="new-text">
-                        <ul>
-                            <li><a class="item_add" href=""> Add to cart</a></li>
-                            <li><a href="#">Quick View </a></li>
-                            <li><a href="#">Show Details </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="new-bottom">
-                    <h5><a class="name" href="#">Crocs Sandals </a></h5>
-                    <div class="rating">
-                        <span class="on">☆</span>
-                        <span class="on">☆</span>
-                        <span class="on">☆</span>
-                        <span class="on">☆</span>
-                        <span>☆</span>
-                    </div>  
-                    <div class="ofr">
-                        <p><span class="item_price">$50.00</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 new-grid new-mdl1 simpleCart_shelfItem wow flipInY animated" data-wow-delay=".9s">
-                <div class="new-top">
-                    <a href="#"><img src="{{asset('images/g11.jpg')}}" class="img-responsive" alt=""/></a>
-                    <div class="new-text">
-                        <ul>
-                            <li><a class="item_add" href=""> Add to cart</a></li>
-                            <li><a href="#">Quick View </a></li>
-                            <li><a href="#">Show Details </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="new-bottom">
-                    <h5><a class="name" href="#">Pink Sip Cup </a></h5>
-                    <div class="rating">
-                        <span class="on">☆</span>
-                        <span class="on">☆</span>
-                        <span class="on">☆</span>
-                        <span class="on">☆</span>
-                        <span>☆</span>
-                    </div>  
-                    <div class="ofr">
-                        <p><span class="item_price">$150.00</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 new-grid simpleCart_shelfItem wow flipInY animated" data-wow-delay="1.1s">
-                <div class="new-top">
-                    <a href="#"><img src="{{asset('images/g12.jpg')}}" class="img-responsive" alt=""/></a>
-                    <div class="new-text">
-                        <ul>
-                            <li><a class="item_add" href=""> Add to cart</a></li>
-                            <li><a href="#">Quick View </a></li>
-                            <li><a href="#">Show Details </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="new-bottom">
-                    <h5><a class="name" href="#">Child Print Bike </a></h5>
-                    <div class="rating">
-                        <span class="on">☆</span>
-                        <span class="on">☆</span>
-                        <span class="on">☆</span>
-                        <span class="on">☆</span>
-                        <span>☆</span>
-                    </div>  
-                    <div class="ofr">
-                        <p class="pric1"><del>$5050.00</del></p>
-                        <p><span class="item_price">$3020.00</span></p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
             <div class="clearfix"> </div>
         </div>
     </div>
@@ -293,4 +221,6 @@
     </div>
 </div>
 <!--//trend-->
+@endsection
+@section('script')
 @endsection

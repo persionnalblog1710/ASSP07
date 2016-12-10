@@ -26,6 +26,8 @@ Route::group([
             Route::get('{parent}/{sub}', ['uses' => 'CategoryController@getProductsByCategory', 'as' => 'product_by_category']);
 });
 
+Route::get('product/{id}', ['uses' => 'ProductController@show', 'as' => 'product_detail']);
+
 Auth::routes();
 
 

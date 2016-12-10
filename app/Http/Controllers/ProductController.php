@@ -47,13 +47,14 @@ class ProductController extends Controller
      */
     public function show($id)
     {
+
         $categories = Category::getCategories();
         $product = Product::find($id);
 
         return view('product.detail', [
             'categories' => $categories,
             'product' => $product,
-        ])
+        ]);
     }
 
     /**
@@ -73,8 +74,8 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
-     */
-     * Remove the specified resource from storage.
+     *
+     * Remove the specified resource from storage
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response

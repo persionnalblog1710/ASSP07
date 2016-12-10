@@ -16,8 +16,10 @@ class HomepageController extends Controller
     public function index()
     {
         $categories = Category::getCategories();
+        $arrivalProduct = Product::getArrivalProducts();
         return view('homepage.index', [
             'categories' => $categories,
+            'arrivalProduct' => $arrivalProduct,
         ]);
     }
 
