@@ -18,4 +18,11 @@ return [
         ],
         'url'    => '/images/avatars/:id/:style/:filename',
     ],
+    'product-image' => [
+        'styles' => [
+            'medium' => '300x300',
+            'thumb'  => '100x100',
+        ],
+        'url'    => '/images/products/:id/:style/:filename',
+    ],
 ];

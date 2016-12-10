@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Category;
+use App\Models\Product;
 
 class CategoryController extends Controller
 {
@@ -45,7 +47,8 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        //
+        $categories = Category::getCategories();
+        
     }
 
     /**
@@ -56,7 +59,7 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        
     }
 
     /**
@@ -81,4 +84,16 @@ class CategoryController extends Controller
     {
         //
     }
+
+    public function getProductsByCategory($parent, $sub)
+    {
+        $categories = Category::getCategories();
+        $productOfCategories = Category::with('products')->where('slug', $sub)->first();
+        return view('product.product_category', [
+            'categories' => $categories,
+            'category_title' => $productOfCategories->name,
+            'products' => $productOfCategories->products,
+        ]);
+    }
+
 }

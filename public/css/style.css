@@ -189,6 +189,8 @@ span.tag {
 	position: relative;
 }
 ul.dropdown-menu {
+    left: initial;
+    top: 60px;
     -moz-animation: fadeInDown .3s ease-in;
     -webkit-animation: fadeInDown .3s ease-in;
 /*-- w3layouts --*/
@@ -1011,6 +1013,7 @@ h3.title span {
 /*--products-left--*/
 .product-grids {
     float: left;
+    text-align: center;
     width: 31%;
     overflow: hidden;
 	-webkit-box-shadow: 0px 0px 6px 1px #DEDEDE;
@@ -3337,3 +3340,17 @@ ul.qty li {
 }
 }
 /*--//responsive-design---*/
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #fafafa;
+  text-decoration: none;
+  background-color: #ff590f;
+}
+
+.dropdown-menu > li {
+    padding: 5px 0px 5px 0px;
+}
+
+.dropdown-menu {
+    font-style: 16px
+}

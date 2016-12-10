@@ -19,5 +19,18 @@ Route::get('profile', ['middleware' => 'auth' ,'as' => 'profile', 'uses' => 'Use
 Route::post('profile/update/{user_id}', ['middleware' => 'auth' ,'as' => 'update_profile', 'uses' => 'UserController@update']);
 Route::post('profile/change_password', ['middleware' => 'auth' ,'as' => 'change_password', 'uses' => 'UserController@changePassword']);
 
+Route::group([
+            'as'     => 'category.',
+            'prefix' => 'category',
+        ], function () {
+            Route::get('{parent}/{sub}', ['uses' => 'CategoryController@getProductsByCategory', 'as' => 'product_by_category']);
+});
+
 Auth::routes();
+
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
 
