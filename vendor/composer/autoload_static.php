@@ -7,11 +7,11 @@ namespace Composer\Autoload;
 class ComposerStaticInit68dd95145e07462ad3ac6052f50f3ec0
 {
     public static $files = array (
-        '1d1b89d124cc9cb8219922c9d5569199' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '1d1b89d124cc9cb8219922c9d5569199' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
@@ -114,8 +114,8 @@ class ComposerStaticInit68dd95145e07462ad3ac6052f50f3ec0
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'XdgBaseDir\\' => 
         array (
@@ -359,8 +359,10 @@ class ComposerStaticInit68dd95145e07462ad3ac6052f50f3ec0
         'CreatePermissionRoleTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_30_141208_create_permission_role_table.php',
         'CreatePermissionTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_30_135954_create_permission_table.php',
         'CreatePostsTable' => __DIR__ . '/../..' . '/database/migrations/2016_01_01_000000_create_posts_table.php',
+        'CreateProductTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_09_015451_create_product_table.php',
         'CreateRolesTable' => __DIR__ . '/../..' . '/database/migrations/2016_10_21_190000_create_roles_table.php',
         'CreateSettingsTable' => __DIR__ . '/../..' . '/database/migrations/2016_10_21_190000_create_settings_table.php',
+        'CreateTransactionTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_09_015743_create_transaction_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DataRowsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/DataRowsTableSeeder.php',
         'DataTypesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/DataTypesTableSeeder.php',
@@ -438,7 +440,10 @@ class ComposerStaticInit68dd95145e07462ad3ac6052f50f3ec0
         'Hamcrest\\Xml\\HasXPath' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
         'MenuItemsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/MenuItemsTableSeeder.php',
         'MenusTableSeeder' => __DIR__ . '/../..' . '/database/seeds/MenusTableSeeder.php',
+        'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/Assert.php',
+        'PHPUnit\\Framework\\BaseTestListener' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/BaseTestListener.php',
         'PHPUnit\\Framework\\TestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',
+        'PHPUnit\\Framework\\TestListener' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/TestListener.php',
         'PHPUnit_Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit_Extensions_GroupTestSuite' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
         'PHPUnit_Extensions_PhptTestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/PhptTestCase.php',
